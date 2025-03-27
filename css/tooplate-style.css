@@ -20,10 +20,10 @@ body {
 a {
     text-decoration: none;
     transition: all 0.3s ease;
-    color: #38CCCC;
+    color: #ff9933;
 }
 
-a:hover { color: #30ADAD; }
+a:hover { color: #CC6600; }
 
 .tm-about-text a { color: #9F6; }
 
@@ -45,7 +45,7 @@ h1, h2, p, i, address, .tm-text-white { color: white; }
     padding: 60px 15px;
 }
 
-.tm-site-header { height: 470px; }
+.tm-site-header { height: 72px; }
 
 .tm-flex-center {
     display: flex;
@@ -54,14 +54,14 @@ h1, h2, p, i, address, .tm-text-white { color: white; }
     justify-content: center;
 }
 
-.tm-about,
+/*.tm-about,*//*
 .tm-contact {
     display: flex;
 }
 
 .tm-contact { flex-direction: row-reverse; }
-.tm-about > div { flex: 1 1; }
-
+/*.tm-about > div { flex: 1 1; }*/
+/*
 .tm-contact-form-container,
 .tm-contact-info {
     width: 40%;
@@ -104,13 +104,13 @@ textarea {
 }
 
 ::-webkit-input-placeholder { color: white; } /* Edge */
-:-ms-input-placeholder { color: white; } /* Internet Explorer 10-11 */
+/*:-ms-input-placeholder { color: white; }*/ /* Internet Explorer 10-11 *//*
 ::placeholder { color: white; }
 .tm-right { margin-right: 0; margin-left: auto; }
 
 .tm-btn-submit {
     background: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     border: 0;
     cursor: pointer;
@@ -139,7 +139,7 @@ textarea {
 .tm-social-link:hover i.fa-instagram { color: #3f729b; }
 .tm-flex { display: flex; }
 address { font-style: normal; }
-
+*/
 .filters-button-group {
     text-align: right;
     padding: 0;
@@ -152,13 +152,19 @@ address { font-style: normal; }
     margin-left: 40px;
 }
 
-.filters-button-group li a.active { color: #F96699; }
-.tm-gallery { margin: -10px; }
+.filters-button-group li a.active { color: #ff3366
+    ; }
+
+
+.tm-gallery { margin: -10px;
+    
+}
 
 .tm-gallery-item {
     border-radius: 12px;
     margin: 10px;
     overflow: hidden;
+
 }
 
 .tm-gallery-item a {
@@ -167,12 +173,12 @@ address { font-style: normal; }
 }
 
 .tm-gallery-item img {
-    width: 220px;
-    height: 220px;    
+    width: 280px;
+    height: 120px;    
 }
 
 @media (max-width: 940px) {
-    .filters-button-group { text-align: left; }
+    .filters-button-group { text-align: center; }
 }
 
 @media (max-width: 680px) {
@@ -189,7 +195,7 @@ address { font-style: normal; }
 }
 
 @media (max-width: 545px) {
-    .tm-about { flex-direction: column; }
+   /* .tm-about { flex-direction: column; }*/
 }
 
 @media (max-width: 489px) {
